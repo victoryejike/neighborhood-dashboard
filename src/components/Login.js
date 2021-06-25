@@ -41,18 +41,18 @@ const SignUp = () => {
   };
 
   return (
-    <div
-      style={{
-        width: "30%",
-        margin: "0 auto",
-        border: "1px solid grey",
-        padding: "15px"
-      }}
-    >
+    <div>
       <p>
         Don't have an account? <Link to="/signup">SignUp</Link>
       </p>
-      <Form>
+      <Form
+        style={{
+          width: "90%",
+          margin: "0 auto",
+          border: "1px solid grey",
+          padding: "15px"
+        }}
+      >
         <Form.Group controlId="formBasicEmail">
           <Form.Label>Email address</Form.Label>
           <Form.Control
@@ -62,9 +62,6 @@ const SignUp = () => {
             name="userEmail"
             // value={email}
           />
-          <Form.Text className="text-muted">
-            We'll never share your email with anyone else.
-          </Form.Text>
         </Form.Group>
 
         <Form.Group controlId="formBasicPassword">
