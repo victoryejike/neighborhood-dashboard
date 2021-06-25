@@ -30,7 +30,7 @@ const SignUp = () => {
         let user = userCredential.user;
         createUserProfileDocument(user);
         console.log(user);
-        localStorage.setItem("user", JSON.stringify(user));
+        sessionStorage.setItem("user", JSON.stringify(user));
         setNewUser(user);
         history.push("/");
       })

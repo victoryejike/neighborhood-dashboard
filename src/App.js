@@ -39,7 +39,7 @@ export default function App() {
           exact
           path="/"
           render={(props) =>
-            localStorage.getItem("user") ? (
+            sessionStorage.getItem("user") ? (
               <Tables {...props} tableData={data} />
             ) : (
               <Redirect to="/signup" />
