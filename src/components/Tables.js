@@ -6,7 +6,7 @@ const Tables = ({ tableData }) => {
   const [newData, setNewData] = useState([]);
 
   const manipulateData = () => {
-    let date = new Date().toLocaleDateString();
+    let date = new Date(Date.now());
     let newDateArr = [];
     //console.log(data);
     for (let newDate of tableData) {
