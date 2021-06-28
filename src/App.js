@@ -28,10 +28,10 @@ export default function App() {
   //console.log(data);
   return (
     <div className="App">
-      <h1>Neighborhood Access Pass Dashboard</h1>
-      <h2 style={{ marginBottom: "30px" }}>
-        Click on Each Resident name to view their requests
-      </h2>
+      <h1 style={{ marginBottom: "30px" }}>
+        Neighborhood Access Pass Dashboard
+      </h1>
+
       <Switch>
         <Route exact path="/signup" component={SignUp} />
         <Route exact path="/login" component={Login} />
